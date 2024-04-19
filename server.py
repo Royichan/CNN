@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 
 #load the model
-cnnModel = load_model('cnn.keras')
+cnnModel = load_model('cnnModel.keras')
 
 def predicting(features):
     classes = ['bacterial_leaf_blight', 'bacterial_leaf_streak', 
